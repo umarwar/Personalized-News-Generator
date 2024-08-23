@@ -12,7 +12,7 @@ from starlette.responses import StreamingResponse
 
 app = FastAPI()
 
-api_key = "your_api_key"
+api_key = "2447d931642844d38c63f5918e032ac6"
 base_url = "https://api.aimlapi.com"
 
 openai.api_key = api_key
