@@ -17,7 +17,12 @@ st.markdown("""
         color: brown;
         font-size: 3em;
         font-weight: bold;
-        margin-bottom: 0.5em;
+    }
+    .tagline {
+        text-align: center;
+        color: #0073e6;
+        font-size: 1.5em;
+        margin-bottom: 2em;
     }
     .sidebar {
         background-color: #f5f5f5;
@@ -38,7 +43,8 @@ st.markdown("""
 """, unsafe_allow_html=True)
 
 # Title with custom styling
-st.markdown('<div class="title">Personalized News Generator</div>', unsafe_allow_html=True)
+st.markdown('<div class="title">NewsNexus</div>', unsafe_allow_html=True)
+st.markdown('<div class="tagline">Connecting You to the Pulse of News</div>', unsafe_allow_html=True)
 
 # Sidebar for input fields and buttons
 with st.sidebar:
