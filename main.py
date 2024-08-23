@@ -12,7 +12,7 @@ from starlette.responses import StreamingResponse
 
 app = FastAPI()
 
-api_key = "2447d931642844d38c63f5918e032ac6"
+api_key = "your_api_key"
 base_url = "https://api.aimlapi.com"
 
 openai.api_key = api_key
@@ -61,13 +61,9 @@ async def translate_text(text, target_language):
         print(f"Error translating text: {e}")
         raise HTTPException(status_code=500, detail="Error translating text")
 
-        # # "AIzaSyBXcCdHXzgqCkEk_QufV62-0fVTfsFK7dI"
-        # YOUR_GOOGLE_API_KEY = "AIzaSyAUw7wqL8-2x9UCp_qAEOvtDZCvAjbCW0U"
-        # YOUR_CUSTOM_SEARCH_ENGINE_ID = "8380278bfbbb94fd5"
-
 async def fetch_article_by_title(title):
-    api_key = "AIzaSyAUw7wqL8-2x9UCp_qAEOvtDZCvAjbCW0U"
-    search_engine_id = "8380278bfbbb94fd5"
+    api_key = "YOUR_GOOGLE_API_KEY"
+    search_engine_id = "YOUR_CUSTOM_SEARCH_ENGINE_ID"
     search_url = f"https://www.googleapis.com/customsearch/v1?q={requests.utils.quote(title)}&key={api_key}&cx={search_engine_id}"
     
     try:
