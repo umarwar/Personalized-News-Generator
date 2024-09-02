@@ -13,7 +13,7 @@ The **Personalized News Generator** is a Streamlit application designed to help 
 ## Technologies
 - Streamlit
 - FastAPI
-- TrOpenAI API (LLaMA 3.1)
+- OpenAI API (LLaMA 3.1)
 - Google Text-to-Speech (gTTS)
 
 ## FastAPI Backend
